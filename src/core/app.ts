@@ -17,7 +17,7 @@ export const application = async () => {
   app.use("/images", express.static("images"))
 
   app.get("/", (req, res) => {
-    res.status(200).json({ message: "Sales Flash is working fine" })
+    res.status(200).json({ message: "Flash Sales is working fine" })
   })
 
   routes(app)
