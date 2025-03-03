@@ -1,0 +1,16 @@
+export const paymentMessages = {
+  CREATE: "Payment created successfully",
+  FETCH: "Payment fetched",
+  PRODUCT_ERROR: "Error processing payment",
+  NOT_FOUND: "Payment not found",
+  EXIST: "Payment already exist",
+  UPDATE: "Payment updated successfully",
+  ERROR_UPDATE: "Error updating payment",
+  VERIFIED: "Payment verified",
+  NOT_VERIFIED: "Payment not verified or invalid",
+  DUPLICATE_TRANSACTION: "Possibly duplicate transaction",
+  INVALID: "Invalid payment details",
+  STOCK_ERROR: "Insufficient stock'",
+  SALE_ERROR: "Sale is not active",
+  PURCHASE_LIMIT: "Purchase limit reached for this product",
+}
