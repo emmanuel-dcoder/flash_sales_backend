@@ -4,6 +4,10 @@
 
 - https://flash-sales-backend.onrender.com
 
+## Documentation Link
+
+- https://documenter.getpostman.com/view/23195379/2sAYdiopcg
+
 ## Setup
 
 1. Clone the repository.
