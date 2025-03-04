@@ -14,7 +14,7 @@ export const sendMailNotification = (
   is_save?: any,
 ) => {
   const source = fs.readFileSync(
-    path.join(__dirname, "..", "templates", `${Template_Name}.hbs`),
+    path.join(__dirname, "../..", "templates", `${Template_Name}.hbs`),
     "utf8",
   )
 
