@@ -11,6 +11,6 @@ export const paymentMessages = {
   DUPLICATE_TRANSACTION: "Possibly duplicate transaction",
   INVALID: "Invalid payment details",
   STOCK_ERROR: "Insufficient stock'",
-  SALE_ERROR: "Sale is not active or open at this house or day",
+  SALE_ERROR: "Sale is not active or open at this hour or day",
   PURCHASE_LIMIT: "Purchase limit reached for this product",
 }
