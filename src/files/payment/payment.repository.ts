@@ -80,4 +80,29 @@ export default class PaymentRepository {
       ...payload,
     })
   }
+
+  static async fetchUsersWithSuccessfulPayments() {
+    const users = await Payment.aggregate([
+      { $match: { status: "paid" } },
+      {
+        $lookup: {
+          from: "user",
+          localField: "userId",
+          foreignField: "_id",
+          as: "userDetails",
+        },
+      },
+      { $unwind: "$userDetails" },
+      {
+        $project: {
+          _id: "$userDetails._id",
+          fullName: "$userDetails.fullName",
+          email: "$userDetails.email",
+          phoneNumber: "$userDetails.phoneNumber",
+        },
+      },
+    ])
+
+    return users
+  }
 }
